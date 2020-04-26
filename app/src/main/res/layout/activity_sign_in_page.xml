@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.SignInPage"
+    android:background="@drawable/bg3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@drawable/logo"/>
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Email:"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password:"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editTextemail"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+       android:textColorHint="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        />
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="sign in"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editTextpassword"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#34495E "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="sign up"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/buttonsignup"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#34495E "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New to The Velvet?"
+        android:layout_marginTop="570dp"
+       android:layout_marginLeft="120dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
